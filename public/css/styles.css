@@ -1,0 +1,529 @@
+/* :root{
+    --colorAmarillo: #EAC926;
+    --colorAzul: #03264C;
+    --colorCeleste: #0044AA;
+    --colorGrisOscuro: #666;
+    --colorGrisClaro: #ebebeb;
+    --colorVerde: #39b54a;
+    --colorNegro: #000;
+    --colorBlanco: #FFF;
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*CLASE 15 -ESTILO REGISTER FORMULARIO */
+
+main.registro {
+    text-align: center;
+    padding-bottom: 40px;
+    
+ 
+}
+
+  /* Clase 15 - Code Review */
+main.registro h2 { 
+    margin: 20px 0 
+}
+  /* Clase 15 - Code Review */
+main.registro .input {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: none;
+    line-height: 18px;
+    margin: 3px 0
+}
+  /* Clase 15 - Code Review */
+
+
+  main.registro .register-form { /* Cambie Aca */
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+  }
+
+  main.registro .form-div {  /* en linea pero con propiedades de bloque  */
+    display: inline-block;  /*podría quitarlo  */
+    text-align: left;
+    margin: 5px 0;  
+}
+
+main.registro .form-div .input {
+    width: 180px;
+}
+
+form div .profile-options {  /* perfil comprador margen superior y a los lados */
+    margin: 5px 0; 
+}
+
+.form-label-intereses {      /*listado en bloque */
+    display: block;
+}
+
+.form-buttons button {     
+    display: inline-block;/* en linea pero con propiedades de bloque  */
+    background-color: #0044AA;
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;  /*tamaño tipografia */
+    border: none;
+    margin: 15px 0;
+}
+
+.submit-button {         /*position relative sobre botton */
+    position: relative;
+    left: 5px;
+}
+
+.reset-button {         /* boton limpiar */
+    position: relative;
+    left: 20px;
+}
+
+/*CLASE 12 -ESTILO FOOTER-  */
+.footer-section {
+    text-align: center ;
+}
+
+/*CLASE 12 -ESTILO  ICONOS- tamaño, color, margen */
+footer section i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #0044AA;
+}
+
+/*    FOOOTER */
+
+ main.login {    /* toda la caja de login */
+    text-align: center;
+    padding: 10px 0 35px;
+ 
+}
+
+
+.login-input {  
+    width: 300px;
+    margin-bottom: 10px ;
+    height: 28px;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit-button-login { /* bottom enviar */
+    width: 300px;
+    height: 28px;
+    background-color: #0044AA ;
+    color: white;
+    border-radius: 5px;
+}
+
+.submit-button-login:hover { 
+    background-color: white;
+    color:  #0044AA;
+}
+
+main.login h2 {    /* titulo de formlario de login*/
+    margin: 25px 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+p{
+    font-size: 12px;
+}
+
+.last-visit h3,
+.offers h3{
+    font-size: 24px;
+}
+
+.price{
+    font-size: 18px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+header{
+    background-color: #EAC926;
+    padding-bottom: 30px;
+}
+
+div.top-header{
+    padding: 5%;
+    /* Clase 14 - Micro desafío 3 */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Clase 14 - Micro desafío 3 */
+header figure.logo{
+    width: 50%;
+    max-width: 220px;
+}
+
+header figure.logo{
+    padding: 10px;
+}
+
+/* Clase 14 - Micro desafío 3 */
+header .form{
+    width: 50%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+header .form .input{
+    display: inline-block;
+    font-size: 12px;
+    padding: 8px 10px;
+    margin-bottom: 2px;
+    width: 70%;
+    background-color: #FFF;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    outline: none; 
+    color: #666;
+}
+
+header .form .submit{
+    display: inline-block;
+    font-size: 12px;
+    padding: 8px;
+    margin-bottom: 2px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    background-color: #FFF;
+    border: 1px none transparent;
+    border-radius: 0px 5px 5px 0px;
+    width: 12%;
+    /* Clase 14 - Micro desafío 3 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div.tarjeta {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header nav{
+    font-size: 12px;
+    /* Clase 13 code-review */
+    display: none;  /*CLASE 13 : versión mobile, ocultar el site y el login navbar.*/
+}
+
+header nav ul{
+    margin-bottom: 10px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+div.burger-menu{
+    text-align: center;
+    margin: auto;
+    padding: 10px 0px 20px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+section.banner div{
+    width: 100%;
+}
+
+section.banner div img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+main section article{
+    background-color: #FFF;
+    margin: 10px 0;
+}
+
+main section article img{
+    width: 100%;
+}
+
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+article div.main-article i{
+    font-size: 16px;
+    text-align: center;
+    background-color: #FFF;
+    width: 35px;
+    height: 35px;
+    padding: 7px;
+    border: 1px solid #39b54a;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    
+}
+
+   /* CLASE 16 hover cambio color al apoyar cursor y giro */ 
+article div.main-article i:hover{
+    color: orange; 
+    border: 2px solid orange ;
+   }
+/* Clase 14 - Micro desafío 1 */
+.price-and-discount{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Clase 14 - Micro desafío 1 */
+.price-and-discount .price {
+    width: 28%;
+}
+
+/* Clase 14 - Micro desafío 1 */
+.price-and-discount .discount {
+    width: 45%;
+}
+
+article div.main-article h4{
+    margin-top: 20px;
+    display: none;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+ /* CLASE 16 hover cambio color y negrita al apoyar cursor */ 
+.discount:hover{
+    color:#0044AA;
+    font-weight: bold 
+    
+}
+ 
+
+
+/* Clase 15 - Code Review */
+/* Estilos del register.html */
+
+/* Micro-Desafío 3 - input:focus */
+/* El selector > permite modificar a los elementos hijos directos de un contenedor padre */
+/* En este caso a todos los inputs que sean hijos directos de un contenedor .form-div*/
+form.register-form .form-div>input:focus{
+    font-weight: bold;
+}
+
+/* Estilos del login.html */
+
+/* Micro-Desafío 3 - input:focus */
+form.login-form .form-div input:focus{
+    font-weight: bold;
+}
+
+form.login-form .form-div input::placeholder{
+    color: #666;
+    font-weight: normal;
+}
+
+/* CLASE 16 centrar footer */ 
+
+.footer-section {
+    text-align: center ;
+    margin-bottom: 10px;
+}
+
+
+.h5-footer {
+    text-align: center;
+}
+
+/* CLASE 16 color iconos */ 
+footer section div i:hover{
+color:#56ccdb
+}  
+
+
+/* CLASE 14 media query para navegación en tablets */ 
+@media (min-width: 480px){
+  
+    main section div article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    article div.main-article h4{
+        display: block;
+    }
+
+    /* Clase 13 code-review No mostrar menú hamburguesa tablet y desktop*/
+    div.burger-menu{
+        display: none;
+    }
+
+    header nav{
+        display: flex; 
+        justify-content: space-between;
+    }
+
+    header nav ul { 
+        display: flex; 
+      }
+
+      header nav ul li {  /* Clase 14 espacios listas */
+        margin: 0 10px  ; 
+      }
+
+      header p {        
+        font-size: 16px;
+    }
+   
+
+    /* Clase 14 - Micro desafío 1 */
+    p.price{
+        min-width: 85px;
+        max-width: 85px;
+    }
+
+    /* Clase 14 - Micro desafío 2 */
+    main section div.products{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start
+    }
+    
+    /* Clase 14 - Micro desafío 2 */
+    main section div.products article{
+        width: 45%;
+    }
+
+/* Clase 15 - Code Review No lo pide pero hacer @media registro y login */
+
+  main.registro .register-form {
+  
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+
+
+
+/* media query para navegación en desktop */
+@media (min-width: 860px){
+
+    .top-header {  
+        max-width: 1200px;
+        margin: auto;
+        
+    } 
+    header nav {    
+        max-width: 1200px;
+        margin: auto;
+    } 
+
+    header nav ul  {  
+        margin: 0 35px;
+    } 
+
+   
+    header nav ul a {
+        font-size: 16px;
+    }
+
+    /* Clase 14 - Micro desafío 2 */
+        main section div.products article{
+        width: 22%;
+    }
+
+    /* Clase 14 - Code Review */
+    header div.top-header {
+        flex-wrap: nowrap  /* le decimos que achique medida si es necesario pero lo deje en la misma linea de bloque -  */
+
+    }
+
+    header div.tarjeta {   /* Clase 14 - Code Review -  */
+        width: 33%;
+        text-align: end; /* llevamos  al final p tarjeta alineado con mis compras-  */
+        margin-right: 10px;
+    }
+
+    header div.top-header {
+        padding: 10px 35px;
+    }
+
+
+    /* CLASE 16 centrar footer */ 
+    .footer-section {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 30px;
+        justify-content: space-around; /*queda mejor que con between*/
+    }
+    
+    .caja-footer {
+        width: 28%;
+    }
+    
+    .h5-footer{
+        text-align: center;
+    }
+       
+    }
+    
+   
+     
+}
+

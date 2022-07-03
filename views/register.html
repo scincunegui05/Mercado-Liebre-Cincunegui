@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Mercado Liebre - REGISTRO</title>
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <figure class="logo">
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre" >
+            </figure>
+            <!-- Code Review Clase 15 - Convertir el siguiente div en un formulario con input y button-->
+            <div class="form" action="#" method="GET">
+                <div class="input">Buscar productos, marcas y más</div>
+                <div class="submit"><i class="fa fa-search"></i></div>
+            </div>
+            <div class="tarjeta"> <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p></div>
+        </div>       
+        <nav>
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul>
+                <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fa fa-bars burger"></i>
+        </div>
+    </header>
+    <main class="registro">
+        <!-- Micro-Desafío 1 - Clase 15 -->
+        <h2 class="register-title">Formulario de Registro</h2>
+        <form class="register-form" action="/login" method="GET">
+            <div class="form-div">
+                <label class="label1" for="nombres" class="form-label">Nombres</label>
+                 <!-- Micro-Desafío 3 required - Clase 15 -->
+                <input class="input" type="text" name="nombres" id="nombres" required>
+            </div> 
+            <br>
+            <div class="form-div">
+                <label class="label1" for="apellidos" class="form-label">Apellidos</label>
+                <!-- Micro-Desafío 3 required - Clase 15 -->
+                <input class="input" type="text" name="apellidos" required>
+            </div>
+            <br>
+            <div class="form-div">
+                <label class="label1" for="nombreUsuario" class="form-label">Nombre de usuario/a</label>
+                <!-- Micro-Desafío 3 required - Clase 15 -->
+                <input class="input" type="text" name="nombreUsuario" id="nombreUsuario" required>
+            </div>
+            <br>
+            <div class="form-div">
+                <label class="label1" for="email" class="form-label">Email</label>
+                <!-- Micro-Desafío 3 required - Clase 15 -->
+                <input class="input"type="email" name="email" id="email" required>
+            </div>
+            <br>
+            <div class="form-div">
+                <label class="label1"for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+                <input class="input" type="date" name="fechaNacimiento" id="fechaNacimiento">
+            </div>
+            <br>
+            <div class="form-div">
+                <label class="label1"for="domicilio" class="form-label">Domicilio</label>
+                <input class="input" type="text" name="domicilio" id="domicilio">
+            </div>    
+            <br>          
+            <div class="form-div">
+                <label class="form-label">Perfil de usuario/a</label>
+                <div class="profile-options">
+                    <label>
+                        <input  type="radio" value="comprador" name="perfilUsuario"> Comprador
+                    </label>
+                    <label>
+                        <input type="radio" value="vendedor" name="perfilUsuario"> Vendedor
+                    </label>
+                </div>
+            </div>
+            <div class="form-div">
+                <label class="form-label-intereses">Intereses</label>
+                <label class="form-label-intereses" ><input type="checkbox" name="intereses" value="electro"> Electro</label>
+                <label class="form-label-intereses" ><input type="checkbox" name="intereses" value="moda"> Moda</label>
+                <label class="form-label-intereses" ><input type="checkbox" name="intereses" value="hogar"> Hogar</label>
+                <label class="form-label-intereses" ><input type="checkbox" name="intereses" value="jugueteria"> Juguetería</label>
+                <label class="form-label-intereses" ><input type="checkbox" name="intereses" value="vidaSana"> Vida Sana</label>
+            </div>              
+            <div class="form-div">
+                <label for="fotoUsuario" class="form-label">Foto de usuario</label>
+                <input type="file" name="fotoUsuario" id="fotoUsuario" accept=".png, .jpeg, .jpg">
+            </div>
+            <div class="form-div">
+                <label for="password" class="form-label">Contraseña</label>
+                <!-- Micro-Desafío 3 required - Clase 15 -->
+                <input class="input" type="password" name="password" id="password" required>
+            </div> 
+            <div class="form-div">
+                <label  for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+                <!-- Micro-Desafío 3 required - Clase 15 -->
+                <input class="input" type="password" name="confirmPassword" id="confirmPassword" required>
+            </div>
+            <div class="form-buttons">
+                <button type="submit" class="submit-button">Enviar</button>
+                <button type="reset" class="reset-button">Limpiar</button>
+            </div>       
+        </form>
+    </main>
+    <footer>
+        <section class="footer-section"> <!--CLASE 11 -ESTRUCTURA SITIO WEB- COMPLETAMOS EL FOOTER -->
+
+           <div class="caja-footer"> <i class="fas fa-credit-card"></i>
+            <h5> Paga con tarjeta o en efectivo</h5>
+            <p> Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                puntos de pago. ¡Y siempre es seguro!</p></div>
+
+           <div class="caja-footer">  <i class="fas fa-gift"></i>
+            <h5> Envío gratis desde $ 2.500</h5>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                productos. Es un beneficio de Mercado Puntos.</p></div>
+
+           <div class="caja-footer"> <i class="fas fa-user-shield"></i>
+            <h5>Seguridad, de principio a fin</h5>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p></div>
+                             
+            </section>
+            <h5 class="h5-footer">Copyright © 1999-2020 MercadoLiebre S.R.L.</h5>   
+     </footer>
+</body>
+</html>
